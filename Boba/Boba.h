@@ -1,6 +1,6 @@
 #pragma once
-#include "BubbleApp.h"
-#include "BubbleUtils.h"
+#include "BobaApp.h"
+#include "BobaUtils.h"
 
 #define START_BUBBLE_GAME(classname)\
 int main()\

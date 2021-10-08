@@ -1,17 +1,17 @@
 #pragma once
 
-#include "BubbleUtils.h"
+#include "BobaUtils.h"
 
-namespace Bubble
+namespace Boba
 {
-	class BUBBLE_API BubbleApp
+	class BUBBLE_API BobaApp
 	{
 	public:
 		void Run();
 		virtual void OnUpdate();
 
 	protected:
-		BubbleApp();
+		BobaApp();
 
 	private:
 

@@ -1,6 +1,6 @@
-#include "Bubble.h"
+#include "Boba.h"
 
-class MyGameApp : public Bubble::BubbleApp
+class MyGameApp : public Boba::BobaApp
 {
 	void OnUpdate() override
 	{

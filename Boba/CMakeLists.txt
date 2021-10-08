@@ -1,0 +1,7 @@
+set(SOURCE_FILES BobaApp.cpp)
+
+set(HEADER_FILES Boba.h BobaApp.h BobaUtils.h)
+
+add_library(boba_lib SHARED ${SOURCE_FILES} ${HEADER_FILES})
+
+target_precompile_headers(boba_lib PRIVATE pch.h)

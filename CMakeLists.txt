@@ -8,4 +8,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 add_subdirectory(MyGame)
-add_subdirectory(Bubble)
+add_subdirectory(Boba)
