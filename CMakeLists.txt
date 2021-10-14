@@ -7,5 +7,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
+if(WIN32)
+	add_definitions(-DBUBBLE_WINDOWS)
+elseif(APPLE)
+	add_definitions(-DBUBBLE_MAC)
+elseif(UNIX)
+	add_definitions(-DBUBBLE_LINUX)
+endif()
+
 add_subdirectory(MyGame)
 add_subdirectory(Boba)
+add_subdirectory(glfw)
+

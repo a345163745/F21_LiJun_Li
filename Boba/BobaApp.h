@@ -1,6 +1,7 @@
 #pragma once
 
 #include "BobaUtils.h"
+#include "BobaWindow.h"
 
 namespace Boba
 {
@@ -14,6 +15,6 @@ namespace Boba
 		BobaApp();
 
 	private:
-
+		BobaWindow mGameWindow;
 	};
 }
