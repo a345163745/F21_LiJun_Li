@@ -7,14 +7,14 @@ namespace Boba
 	{
 		std::cout << "Boba running..." << std::endl;
 
-		mGameWindow.CreateWindow(800,600,"TEST");
+		bGameWindow.CreateWindow(800,600,"TEST");
 
 		while (true)
 		{
 			OnUpdate();
-			mGameWindow.SwapBuffers();
+			bGameWindow.SwapBuffers();
 	
-			mGameWindow.PollEvents();
+			bGameWindow.PollEvents();
 
 		}
 	}

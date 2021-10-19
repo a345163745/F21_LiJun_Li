@@ -15,6 +15,6 @@ namespace Boba
 		BobaApp();
 
 	private:
-		BobaWindow mGameWindow;
+		BobaWindow bGameWindow;
 	};
 }
