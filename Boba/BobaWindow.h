@@ -1,19 +1,19 @@
 #pragma once
 
 #include "BobaUtils.h"
-
+#include "BobaWindowImplementation.h"
 namespace Boba
 {
-	class BUBBLE_API BobaWindow
+	class BOBA_API BobaWindow
 	{
 	public:
 		BobaWindow();
-		void CreateWindow(int width, int height, std::string name);
+		void CreateWindow(int width, int height,const std::string & name);
 		void SwapBuffers();
 		void PollEvents();
 		int GetWindowWidth() const;
-		int GetWindowWidth() const;
+		int GetWindowHeight() const;
 	private:
-		WindowImplementation* window;
+		BobaWindowImplementation* bWindow;
 	};
 }

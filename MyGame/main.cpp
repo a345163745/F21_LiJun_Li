@@ -8,5 +8,5 @@ class MyGameApp : public Boba::BobaApp
 	}
 };
 
-START_BUBBLE_GAME(MyGameApp);
+START_BOBA_GAME(MyGameApp);
 //Entry point

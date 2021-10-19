@@ -1,32 +1,43 @@
 #include "pch.h"
 #include "BobaWindow.h"
+#include "GLFWimport/GLFW_implementation.h"
 namespace Boba
 {
 	BobaWindow::BobaWindow()
 	{
-		window->Init();
+#ifdef BOBA_WINDOWS
+		bWindow = new GLFW_implementation();
+#elif BOBA_MAC
+		bWindow = new GLFW_implementation();
+#elif BOBA_LINUX
+		bWindow = new GLFW_implementation();
+#else
+		#only_Windows_Linux_Mac_are_supported
+#endif
+
+		bWindow->Init();
 	}
 
-
-	void BobaWindow::CreateWindow(int width, int height, std::string name)
+	void BobaWindow::CreateWindow(int width, int height, const std::string& name)
 	{
-		window->CreateWindow(width, height, name);
+		bWindow->CreateWindow(width, height, name);
 	}
+
 	void BobaWindow::SwapBuffers()
 	{
-		window->SwapBuffers();
+		bWindow->SwapBuffers();
 	}
 	void BobaWindow::PollEvents()
 	{
-		window->PollEvents();
+		bWindow->PollEvents();
 	}
 	int BobaWindow::GetWindowWidth() const
 	{
-		return window->GetWindowWidth();
+		return bWindow->GetWindowWidth();
 	}
-	int BobaWindow::GetWindowWidth() const
+	int BobaWindow::GetWindowHeight() const
 	{
-		return window->GetWindowHeight();
+		return bWindow->GetWindowHeight();
 	}
 
 }

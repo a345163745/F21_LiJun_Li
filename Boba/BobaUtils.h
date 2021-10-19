@@ -1,10 +1,10 @@
 #pragma once
-#ifdef BUBBLE_WINDOWS
-#ifdef BUBBLE_LIB
-		#define BUBBLE_API __declspec(dllexport)
+#ifdef BOBA_WINDOWS
+#ifdef BOBA_LIB
+		#define BOBA_API __declspec(dllexport)
 #else
-		#define BUBBLE_API __declspec(dllimport)
+		#define BOBA_API __declspec(dllimport)
 #endif
 #else
-#define BUBBLE_API
+#define BOBA_API
 #endif

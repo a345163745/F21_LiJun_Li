@@ -6,17 +6,16 @@ namespace Boba
 	void BobaApp::Run()
 	{
 		std::cout << "Boba running..." << std::endl;
-		GLFWwindow* window;
-		glfwInit();
-		//mGameWindow.CreateWindow(800,600,"Test");
-		window = glfwCreateWindow(800, 600, "Test", NULL, NULL);
+
+		mGameWindow.CreateWindow(800,600,"TEST");
+
 		while (true)
 		{
 			OnUpdate();
-			//mGameWindow.SwapBuffers();
-			glfwSwapBuffers(window);
-			//mGameWindow.PollEvents();
-			glfwPollEvents();
+			mGameWindow.SwapBuffers();
+	
+			mGameWindow.PollEvents();
+
 		}
 	}
 	void BobaApp::OnUpdate(){}

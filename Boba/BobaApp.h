@@ -5,7 +5,7 @@
 
 namespace Boba
 {
-	class BUBBLE_API BobaApp
+	class BOBA_API BobaApp
 	{
 	public:
 		void Run();
