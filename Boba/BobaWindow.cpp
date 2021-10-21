@@ -6,11 +6,11 @@ namespace Boba
 	BobaWindow::BobaWindow()
 	{
 #ifdef BOBA_WINDOWS
-		bWindow = new GLFW_implementation();
+		bWindow = std::unique_ptr<BobaWindowImplementation>{ new GLFW_implementation() };
 #elif BOBA_MAC
-		bWindow = new GLFW_implementation();
+		bWindow = std::unique_ptr<BobaWindowImplementation>{ new GLFW_implementation() };
 #elif BOBA_LINUX
-		bWindow = new GLFW_implementation();
+		bWindow = std::unique_ptr<BobaWindowImplementation>{ new GLFW_implementation() };
 #else
 		#only_Windows_Linux_Mac_are_supported
 #endif

@@ -2,6 +2,7 @@
 
 #include "BobaUtils.h"
 #include "BobaWindowImplementation.h"
+#include "pch.h"
 namespace Boba
 {
 	class BOBA_API BobaWindow
@@ -14,6 +15,6 @@ namespace Boba
 		int GetWindowWidth() const;
 		int GetWindowHeight() const;
 	private:
-		BobaWindowImplementation* bWindow;
+		std::unique_ptr<BobaWindowImplementation> bWindow;
 	};
 }
