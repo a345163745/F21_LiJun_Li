@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Boba", "Boba\Boba.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glfw", "glfw\build\src\glfw.vcxproj", "{37E8C4C2-C7D5-354C-AFF5-15F07EFB2D84}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glad", "glad\glad.vcxproj", "{75F6D155-79EB-476C-A16B-2213B1F62A89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{37E8C4C2-C7D5-354C-AFF5-15F07EFB2D84}.Release|x64.Build.0 = Release|x64
 		{37E8C4C2-C7D5-354C-AFF5-15F07EFB2D84}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
 		{37E8C4C2-C7D5-354C-AFF5-15F07EFB2D84}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{75F6D155-79EB-476C-A16B-2213B1F62A89}.Debug|x64.ActiveCfg = Debug|x64
+		{75F6D155-79EB-476C-A16B-2213B1F62A89}.Debug|x64.Build.0 = Debug|x64
+		{75F6D155-79EB-476C-A16B-2213B1F62A89}.MinSizeRel|x64.ActiveCfg = Debug|x64
+		{75F6D155-79EB-476C-A16B-2213B1F62A89}.MinSizeRel|x64.Build.0 = Debug|x64
+		{75F6D155-79EB-476C-A16B-2213B1F62A89}.Release|x64.ActiveCfg = Release|x64
+		{75F6D155-79EB-476C-A16B-2213B1F62A89}.Release|x64.Build.0 = Release|x64
+		{75F6D155-79EB-476C-A16B-2213B1F62A89}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{75F6D155-79EB-476C-A16B-2213B1F62A89}.RelWithDebInfo|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
