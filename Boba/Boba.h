@@ -1,7 +1,8 @@
 #pragma once
 #include "BobaApp.h"
 #include "BobaUtils.h"
-
+#include "BobaWindow.h"
+#include "BobaSprite.h"
 #define START_BOBA_GAME(classname)\
 int main()\
 {\

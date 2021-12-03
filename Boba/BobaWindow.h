@@ -5,7 +5,7 @@
 #include "pch.h"
 namespace Boba
 {
-	class BOBA_API BobaWindow
+	class BobaWindow
 	{
 	public:
 		BobaWindow();

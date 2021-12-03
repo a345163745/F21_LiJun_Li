@@ -1,5 +1,10 @@
 #include "pch.h"
 #include "BobaApp.h"
+#include "BobaSprite.h"
+#include "BobaShader.h"
+
+#define GLFW_INCLUDE_NONE
+#include "glad/glad.h"
 #include "GLFW/glfw3.h"
 namespace Boba
 {
