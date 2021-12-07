@@ -56,6 +56,15 @@ namespace Boba
 		glDeleteShader(vertexShader);
 		glDeleteShader(fragmentShader);
 	}
+	void OpenGLShader::SetVec2InitUniform(const std::string& unifName, int first, int second)
+	{
+		assert(bShaderProgram);
+		
+		glUseProgram(bShaderProgram);
+
+		int location{ glGetUniformLocation(bShaderProgram,unifName.c_str()) };
+		glUniform2i(location,first,second);
+	}
 	void OpenGLShader::Use()
 	{
 		glUseProgram(bShaderProgram);

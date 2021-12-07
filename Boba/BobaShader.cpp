@@ -17,6 +17,10 @@ namespace Boba
 	{
 		bShader->Load(vertexFile, fragmentFile);
 	}
+	void BobaShader::SetVec2InitUniform(const std::string& unifName, int first, int second)
+	{
+		bShader->SetVec2InitUniform(unifName, first, second);
+	}
 	void BobaShader::Use()
 	{
 		bShader->Use();

@@ -8,6 +8,7 @@ namespace Boba
 	public:
 		BobaShader();
 		void Load(const std::string& vertexFile, const std::string& fragmentFile);
+		void SetVec2InitUniform(const std::string& unifName, int first, int second);
 		void Use();
 
 	private:

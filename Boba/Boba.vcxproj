@@ -91,6 +91,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)glad\include;$(SolutionDir)stbi;$(SolutionDir)Boba;$(SolutionDir)glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -108,6 +109,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)glad\include;$(SolutionDir)stbi;$(SolutionDir)Boba;$(SolutionDir)glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,6 +127,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)glad\include;$(SolutionDir)stbi;$(SolutionDir)Boba;$(SolutionDir)glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,6 +145,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)glad\include;$(SolutionDir)stbi;$(SolutionDir)Boba;$(SolutionDir)glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,6 +157,8 @@
   <ItemGroup>
     <ClInclude Include="Boba.h" />
     <ClInclude Include="BobaApp.h" />
+    <ClInclude Include="BobaRenderer.h" />
+    <ClInclude Include="BobaRendererImplementation.h" />
     <ClInclude Include="BobaShader.h" />
     <ClInclude Include="BobaShaderImplementation.h" />
     <ClInclude Include="BobaSprite.h" />
@@ -162,17 +168,20 @@
     <ClInclude Include="BobaWindowImplementation.h" />
     <ClInclude Include="GLFWimport\GLFW_implementation.h" />
     <ClInclude Include="OpenGLimport\OpenGLBobaSprite.h" />
+    <ClInclude Include="OpenGLimport\OpenGLRenderer.h" />
     <ClInclude Include="OpenGLimport\OpenGLShader.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BobaApp.cpp" />
+    <ClCompile Include="BobaRenderer.cpp" />
     <ClCompile Include="BobaShader.cpp" />
     <ClCompile Include="BobaSprite.cpp" />
     <ClCompile Include="BobaWindow.cpp" />
     <ClCompile Include="BobaWindowImplementation.cpp" />
     <ClCompile Include="GLFWimport\GLFW_implementation.cpp" />
     <ClCompile Include="OpenGLimport\OpenGLBobaSprite.cpp" />
+    <ClCompile Include="OpenGLimport\OpenGLRenderer.cpp" />
     <ClCompile Include="OpenGLimport\OpenGLShader.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
