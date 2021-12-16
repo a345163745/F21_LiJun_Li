@@ -1,0 +1,2 @@
+1. The Star image falling from top to bottom
+2. The Star image will disppear once it hits the bottom

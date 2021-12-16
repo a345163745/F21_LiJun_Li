@@ -16,7 +16,7 @@ namespace Boba
 	void BobaRenderer::Init()
 	{
 		if (bInstance == nullptr) {
-			bInstance == new BobaRenderer;
+			bInstance = new BobaRenderer;
 		}
 	}
 	void BobaRenderer::Draw( BobaSprite& sprite,
@@ -33,6 +33,7 @@ namespace Boba
 	{
 		if (bInstance != nullptr) {
 			delete bInstance;
+			bInstance = nullptr;
 		}
 	}
 }

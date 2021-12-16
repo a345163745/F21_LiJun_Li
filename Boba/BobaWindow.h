@@ -2,6 +2,7 @@
 
 #include "BobaUtils.h"
 #include "BobaWindowImplementation.h"
+#include "BobaEvents.h"
 #include "pch.h"
 namespace Boba
 {
@@ -14,6 +15,7 @@ namespace Boba
 		void PollEvents();
 		int GetWindowWidth() const;
 		int GetWindowHeight() const;
+		void SetKeyPressedCallback(std::function<void(BobaKeyPressedEvent&)> func);
 	private:
 		std::unique_ptr<BobaWindowImplementation> bWindow;
 	};

@@ -8,3 +8,9 @@
 #else
 #define BOBA_API
 #endif
+
+#ifdef BOBA_DEBUG
+	#define BOBA_LOG(x) std::cout<<x<<std::endl;
+#else
+	#define BOBA_LOG(x)
+#endif // BOBA_DEBUG

@@ -6,11 +6,15 @@ namespace Boba
 	void OpenGLShader::Load(const std::string& vertexFile, const std::string& fragmentFile)
 	{
 		std::ifstream vertexFileStream{ vertexFile };
+		if (!vertexFileStream.is_open())
+			std::cout << "ERROR: failed to open vertex shader file!" << std::endl;
+
 		std::stringstream vertexStringStream;
 		vertexStringStream << vertexFileStream.rdbuf();
 		std::string vertexCode{ vertexStringStream.str() };
 		const char* cVertexCode{ vertexCode.c_str() };
 		vertexFileStream.close();
+
 		unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
 		glShaderSource(vertexShader, 1, &cVertexCode, NULL);
 		glCompileShader(vertexShader);
@@ -22,7 +26,10 @@ namespace Boba
 			glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
 			std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
 		}
+
 		std::ifstream fragmentFileStream{ fragmentFile };
+		if (!fragmentFileStream.is_open())
+			std::cout << "ERROR: failed to open fragment shader file!";
 		std::stringstream fragmentStringStream;
 		fragmentStringStream << fragmentFileStream.rdbuf();
 		std::string fragmentCode{ fragmentStringStream.str() };

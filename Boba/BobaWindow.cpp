@@ -40,4 +40,9 @@ namespace Boba
 		return bWindow->GetWindowHeight();
 	}
 
+	void BobaWindow::SetKeyPressedCallback(std::function<void(BobaKeyPressedEvent&)> func)
+	{
+		bWindow->SetKeyPressedCallback(func);
+	}
+
 }

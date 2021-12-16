@@ -1,5 +1,6 @@
 #pragma once
-#include <string>
+#include "pch.h"
+#include "BobaEvents.h"
 namespace Boba
 {
 	class BobaWindowImplementation
@@ -11,5 +12,7 @@ namespace Boba
 		virtual void PollEvents() = 0;
 		virtual int GetWindowWidth() const = 0;
 		virtual int GetWindowHeight() const = 0;
+		virtual void SetKeyPressedCallback(std::function<void(BobaKeyPressedEvent&)> func) = 0;
+		virtual ~BobaWindowImplementation() {};
 	};
 }

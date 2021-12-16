@@ -14,7 +14,12 @@ namespace Boba
 		virtual void PollEvents() override;
 		virtual int GetWindowWidth() const override;
 		virtual int GetWindowHeight() const override;
+		virtual void SetKeyPressedCallback(std::function<void(BobaKeyPressedEvent&)> func) override;
 	private:
+		struct CallbackFunctions
+		{
+			std::function<void(BobaKeyPressedEvent &)> KeyPressedCallback;
+		} bCallbacks;
 		GLFWwindow* bWindow;
 	};
 }

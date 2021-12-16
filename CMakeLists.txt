@@ -15,7 +15,11 @@ elseif(UNIX)
 	add_definitions(-DBOBA_LINUX)
 endif()
 
+add_definitions(-DBOBA_OPENGL)
+
 add_subdirectory(MyGame)
 add_subdirectory(Boba)
 add_subdirectory(glfw)
+add_subdirectory(glad)
+add_subdirectory(stbi)
 
